@@ -1,0 +1,13 @@
+package com.zachsents.projparaphrase;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class ParaphraseButtonListener implements ActionListener
+{
+	@Override
+	public void actionPerformed(ActionEvent arg0)
+	{
+		Main.outputTA.setText(Main.reword(Main.inputTA.getText()));
+	}
+}
